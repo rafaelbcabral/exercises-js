@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2.oculto {
+            display: none;
+        }
+
+        h1 {
+            color: blue;
+        }
+        #b {
+            color: red;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgb(red, green, blue);
+        }
+    </style>
+</head>
+<body>
+    <h1>Clientes</h1>
+    <h2 class="oculto">A</h2>
+    <h2 id="b">B</h2>
+    <table>
+        <thead>
+            <tr><th>Id</th><th>Nome</th><th>Sobrenome</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td colspan="2">Ana da Silva</td></tr>
+            <tr><td>2</td><td colspan="2">Bruna de Souza</td></tr>
+            <tr><td>3</td><td colspan="2">Carla Moraes</td></tr>
+            <tr><td>4</td><td colspan="2">Darlan Gomes</td></tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>

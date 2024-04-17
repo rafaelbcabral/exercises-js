@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script  type="text/javascript" src="index.js" ></script>
+    <script>
+        console.log( 'oi' );
+    </script>
+</head>
+<body>
+    <form action="api/clientes/cadastro.php"
+        method="GET"
+    >
+        <label for="nome" accesskey="n" >Nome:</label>
+        <input type="text" id="nome" name="nome" />
+
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" >
+            <option value="1" >Nova Friburgo</option>
+            <option value="2" selected >Bom Jardim</option>
+            <option value="3" >Cordeiro</option>
+        </select>
+
+        <label for="pagto">Opção de Pagamento</label>
+        <fieldset id="pagto" >
+            <input type="radio" value="CC" id="cc" name="pagto" />
+            <label for="cc">Cartão de Crédito</label>
+            <input type="radio" value="pix" id="pix" name="pagto" />
+            <label for="pix">Pix</label>
+            <input type="radio" value="boleto" id="boleto" name="pagto" />
+            <label for="boleto">Boleto</label>
+        </fieldset>
+
+        <input type="checkbox" id="ofertas" name="ofertas" />
+        <label for="ofertas">Receber ofertas por e-mail</label>
+
+        <label for="aniversario">Aniversário</label>
+        <input type="date" id="aniversario" name="aniversario" />
+
+        <button type="">Enviar</button>
+    </form>
+</body>
+</html>
