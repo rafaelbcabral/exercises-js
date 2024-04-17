@@ -1,0 +1,22 @@
+TAREFAS A FAZER
+
+1) Crie um arquivo tarefas.js com um array de objetos de
+   tarefa, contendo em cada objeto os atributos "descricao"
+   e "feita" (true/false).
+
+   No index.js, crie uma função que transforme os objetos
+   de tarefa em linhas de uma tabela. Cada linha deve ser
+   criada como um objeto do DOM, sem utilizar innerHTML.
+
+   Utilize a função criada para desenhar as tarefas em
+   uma tabela.
+
+2) Crie no HTML uma caixa de texto que permita pesquisar
+   uma tarefa que contenha (em sua descrição) o texto
+   informado. Faça com que a tabela exiba apenas as
+   tarefas que contenham o texto informado. Se nenhum
+   texto for informado, todas as tarefas devem ser exibidas.
+
+3) Adicione à tabela, para cada linha, um botão capaz
+   de remover a tarefa, tanto do array quanto da tabela
+   em si.
