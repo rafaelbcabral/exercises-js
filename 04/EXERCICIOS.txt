@@ -1,0 +1,8 @@
+1) Modifique o exercício para que o contador também seja
+armazenado no localStorage e recuperado dele quando
+necessário.
+
+2) Adicione a totalização das contas à tabela, no tfoot,
+considerando que as contas a pagar devem ter um saldo
+negativo, enquanto as contas a receber devem ter um saldo
+positivo.
