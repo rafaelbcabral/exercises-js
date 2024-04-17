@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        input,select {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contato</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+        <label for="telefone">Telefones:</label>
+        <input type="tel" id="telefone" />
+        <button id="adicionar" type="button" >Adicionar</button>
+        <select aria-label="telefones" multiple >
+        </select>
+        <menu>
+            <button type="button" id="enviar" >Enviar</button>
+        </menu>
+        <div></div>
+    </form>
+    <script>
+        var x = 10;
+        let telefones = [];
+
+        function enviar() {
+            const nome = document.getElementById( 'nome' ).value;
+            const contato = {
+                nome: nome,
+                telefones: telefones
+            };
+            const json = JSON.stringify( contato );
+            console.log( json );
+            const contato2 = JSON.parse( json );
+            console.table( contato2 );
+        }
+        document.getElementById( 'enviar' ).onclick = enviar;
+
+        function adicionar() {
+            const campoTelefone = document.getElementById( 'telefone' );
+            const telefone = campoTelefone.value;
+
+            const div = document.getElementsByTagName( 'div' )[ 0 ];
+            div.innerText = ''; // Limpa a mensagem
+            const tamanho = telefone.length;
+            if ( tamanho < 9 || tamanho > 11 ) {
+                div.innerText = 'Telefone com tamanho incorreto';
+                return; // Sai
+            }
+
+            telefones.push( telefone );
+
+            const select = document.querySelector( 'select' );
+            const opcao = '<option>' + telefone + '</option>';
+            select.innerHTML += opcao;
+            campoTelefone.value = '';
+            campoTelefone.focus();
+        }
+        document.getElementById( 'adicionar' ).onclick = adicionar;
+    </script>
+</body>
+</html>

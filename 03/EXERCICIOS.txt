@@ -1,0 +1,21 @@
+1) Crie um arquivo produtos.html que liste produtos
+   utilizando um arquivo produtos.js para realizar suas
+   operações.
+   No JavaScript, declare um array de objetos de produto,
+   que devem conter os atributos "descricao", "estoque" e
+   "preco". Exemplo:
+   [
+    { "descricao": "Água mineral 1,5", "preco": 6.50, "estoque": 20 },
+    // colocar outros
+   ]
+   Crie a função desenharProdutos() para ser capaz de receber
+   um array como o acima e preencher uma tabela HTML com
+   os dados de cada produto.
+   Faça com que o HTML declare um script que chame a
+   função acima.
+
+
+HOMEWORK
+
+Adicione um formulário ao problema anterior, que permita
+adicionar um produto à tabela.
