@@ -1,0 +1,16 @@
+1) Modifique o exercício para que o contador também seja
+armazenado no localStorage e recuperado dele quando
+necessário.
+
+2) Adicione a totalização das contas à tabela, no tfoot,
+considerando que as contas a pagar devem ter um saldo
+negativo, enquanto as contas a receber devem ter um saldo
+positivo.
+
+3) Faça com que ao adicionar uma conta, o total seja
+   atualizado.
+
+4) Usando CSS e JavaScript, faça com que a cor do total
+   fique vermelha caso o saldo seja negativo, azul caso
+   o saldo seja positivo e preto caso seja zero.
+   DICA: Declare regras e use a propriedade classList.

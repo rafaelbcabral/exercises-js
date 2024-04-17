@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas a Pagar e a Receber</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="./src/index.js" type="module" defer ></script>
+</head>
+<body>
+    <h1>Contas a Pagar e a Receber</h1>
+    <h2>Nova</h2>
+    <hr/>
+    <form>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" />
+        <label for="tipo">Tipo:</label>
+        <select id="tipo">
+            <option value="P" >Pagar</option>
+            <option value="R" >Receber</option>
+        </select>
+        <label for="valor">Valor (R$):</label>
+        <input type="text" id="valor" />
+        <button type="button" id="adicionar">Adicionar</button>
+    </form>
+    <hr/>
+    <h2>Contas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Valor (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>
