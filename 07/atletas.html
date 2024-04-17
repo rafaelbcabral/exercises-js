@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul></ul>
+
+  <script>
+
+    const atletasJson = localStorage.getItem('itens') || [];
+    const Atletas = JSON.parse(atletasJson);
+
+    const ulFrase = Atletas.map(atleta => `${atleta.nome} possui ${atleta.peso}kg e mede ${atleta.altura}m.`);
+
+    let id = 0
+
+    for(const atletaFrase of ulFrase){
+      atletaFrase.id = id;
+      atletaFrase.addEventListener('dblclick', remover);
+    function remover(event){
+      const indice = event.target.id -1;
+      Atletas.splice(indice,1); // remove no array
+      localStorage.setItem('itens', json.stringify(Atletas));
+      event.target.remove();
+    }
+    const li = document.createElement('li');
+    li.innerText += atletaFrase;
+    const ul = document.querySelector('ul').appendChild(li);
+    ++id;
+  }
+
+  </script>
+</body>
+</html>
