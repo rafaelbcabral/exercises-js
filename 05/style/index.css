@@ -1,0 +1,17 @@
+tbody {
+    cursor: pointer;
+    user-select: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+tbody tr:nth-child(even) {
+    background-color: beige;
+}
+
+.selecionada {
+    background-color: yellow !important;
+}
+
