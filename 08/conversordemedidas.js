@@ -29,4 +29,5 @@ break;
 break;
   default:
     alert('Valor inválido, tente novamente!');
+    break
 }
