@@ -1,29 +1,33 @@
-function calcularIMC(peso, altura){
-  return new Promise((resolved, rejected) => {
-    let IMC = 0
+async function calcularIMC(peso, altura){
 
       if(isNaN(peso) || isNaN(altura)){
         if(isNaN(altura) && isNaN(peso)){
-          rejected(`Altura e peso inválidos! (${altura}, ${peso})`)
+          return Promise.reject(`Altura e peso inválidos! (${altura}, ${peso})`)
         }
         if(isNaN(peso)){
-          rejected(`Peso inválido! (${peso})`)
+          return Promise.reject(`Peso inválido! (${peso})`)
         }
         if(isNaN(altura)){
-          rejected(`Altura inválida! (${altura}) `)
+          return Promise.reject(`Altura inválida! (${altura}) `)
         }
-      }else{
-      setTimeout(() => {
-        IMC = peso/(altura * altura)
-        resolved(IMC)
-    }, 1000)
+
+        return (peso / (altura * altura))
   }
-  })
 }
 
-function resultado(peso, altura){
-  calcularIMC(peso, altura).then((IMC) => {
+// const squares = await Promise.all(numbers.map(async (number) => {
+//   await waitFor(2)
+//   return number * number
+// }))
+
+async function resultado(peso, altura){
+  try {
+    console.log(`Calculando o IMC para peso ${peso} e altura ${altura}...`)
+
+    const IMC = Number(await calcularIMC(peso, altura));
+
     console.log(`A promise está funcionando. Seu IMC é de ${IMC.toFixed(2)} para ${peso}Kg e ${altura}m`);
+
     setTimeout(() => {
       if (IMC < 18.5) {
         console.log('Abaixo de 18.5: **magreza**');
@@ -36,12 +40,11 @@ function resultado(peso, altura){
       } else if (IMC >= 40) {
         console.log('Acima de 40: **obesidade grave**');
       }
-    }, 2 * 1000);
-  }).catch((error) => {
-    console.error(`Erro: ${error}`);
-  });
+    }, 1);
 
-  console.log(`Calculando o IMC para peso ${peso} e altura ${altura}...`)
+  }catch (error) {
+    console.error(`Erro: ${error}`);
+  }
 }
 
 resultado(70, 1.75)
