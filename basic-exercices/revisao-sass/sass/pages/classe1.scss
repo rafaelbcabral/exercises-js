@@ -1,0 +1,25 @@
+@mixin corDeFundo($color){
+  background-color: $color;
+}
+.classe1{
+  ul{
+    @include corDeFundo($vermelho);
+  }
+
+  &.liAmarelo{
+    color: $amarelo;
+  }
+  li{
+    background-color: $azul;
+  }
+  button{
+    background-color: $verde;
+    cursor: pointer;
+    color: white;
+  }
+
+  &:hover{
+    transition: .5s;
+    background-color: $vermelho;
+  }
+}

@@ -1,0 +1,19 @@
+.btn {	width: 150px;
+	height: 50px;
+	background: none;
+	border-radius: 20px;
+  cursor: pointer;
+
+	&.btn-roxo{
+		background-color: $roxo;
+	}
+
+  &.btn-amarelo{
+		background-color: $amarelo;
+	}
+}
+
+.btn-vermelho{
+  @extend .btn;
+    background-color: $vermelho;
+}

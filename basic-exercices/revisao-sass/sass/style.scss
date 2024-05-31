@@ -1,0 +1,10 @@
+// sass ou scss
+
+// sass --watch sass/style.scss:css/style.css - Comando para rodar
+// sass --watch sass/style.scss:css/style.css --style compressed - AUMENTAR A VELOCIDADE EM QUE O SITE É CARREGADO.
+@import "colors/cores.scss";
+
+
+@import "pages/classe1.scss";
+
+@import "pages/btn.scss";
