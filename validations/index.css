@@ -46,7 +46,7 @@ button:hover {
   filter: brightness(0.9);
 }
 .error {
-  border: 1px solid #f64348;
+  border: 1px solid red;
 }
 .success {
   border: 1px solid #43f67f;
