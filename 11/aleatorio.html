@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aleatorio() {
+            return Math.random() * 10;
+        }
+
+        function aleatorioComPromessa() {
+            return new Promise( function( resolve, reject ) {
+                const numero = Math.random(); // 0..1
+                if ( numero < 0.5 ) {
+                    reject( new Error( 'Número inesperado' ) );
+                } else {
+                    resolve( numero );
+                }
+            } );
+        }
+
+        console.log( aleatorio() );
+
+        const promessa = aleatorioComPromessa();
+        promessa.then( function( valor ) {
+            console.log( 'Gerou! ' + valor );
+        });
+        promessa.catch( function( erro ) {
+            console.log( 'Deu erro: ' + erro.message );
+        });
+        promessa.finally( function() {
+            console.log( 'Fim' );
+        });
+        console.log( 'Oi' );
+
+
+        // aleatorioComPromessa()
+        //     .then( function() {})
+        //     .catch( function() {} )
+        //     .finally( function() {} )
+    </script>
+</body>
+</html>

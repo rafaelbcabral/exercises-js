@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeout( function() { alert( 'Oi' ); }, 3000 );
+        // setInterval( function() { console.log( 'Oi' ); }, 2000 );
+        function sleep( tempoEmMilissegundos ) {
+            return new Promise( function ( resolve, reject ) {
+                setTimeout( resolve, tempoEmMilissegundos );
+            } );
+        }
+
+        const promessa = sleep( 3000 );
+        promessa.then( function() {
+            console.log( 'Se passaram 3 segundos' );
+        })
+
+    </script>
+</body>
+</html>

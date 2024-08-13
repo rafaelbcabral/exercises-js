@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Pessoa {
+            nome = '';
+            endereco = '';
+            telefone = '';
+
+            setNome( valor ) {
+                this.nome = valor;
+                return this;
+            }
+
+            setEndereco( valor ) {
+                this.endereco = valor;
+                return this;
+            }
+
+            setTelefone( valor ) {
+                this.telefone = valor;
+                return this;
+            }
+        }
+
+        const pessoa = new Pessoa();
+        pessoa
+            .setNome( 'Ana' )
+            .setTelefone( '99999999' )
+            .setEndereco( 'Rua das Flores, 123' );
+        console.log( pessoa );
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pokemon</h1>
+    <label for="nome">Nome:</label>
+    <input type="search" id="nome">
+    <button id="consultar">Consultar</button>
+    <img src="" alt="Pokemon" />
+    <script>
+        consultar.onclick = () => {
+            fetch( 'https://pokeapi.co/api/v2/pokemon/' + nome.value )
+                .then( function( response ) {
+                    if ( ! response.ok ) { // status < 400
+                        throw new Error( 'Deu ruim: status ' + response.status );
+                    }
+                    response.json()
+                        .then( function( objeto ) {
+                            const img = document.querySelector( 'img' );
+                            img.src = objeto.sprites.front_default;
+                        } )
+                        .catch( function() {
+                            alert( 'Erro ao processar JSON' );
+                        });
+                } )
+                .catch( function( erro ) {
+                    alert( erro.message );
+                })
+        };
+    </script>
+</body>
+</html>

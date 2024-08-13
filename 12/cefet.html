@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+        fetch( 'https://cefet-rj.br' )
+            .then( response => {
+                if ( ! response.ok ) { // response.status != 200
+                    throw new Error( 'Erro ao acessar o site.' );
+                }
+                response.text()
+                    .then( conteudo => {
+                        document.querySelector( 'div' ).innerHTML = conteudo;
+                    } );
+            } )
+            .catch( err => {
+                console.log( err );
+                alert( err.message );
+            } );
+    </script>
+</body>
+</html>
