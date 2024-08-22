@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "codigo": "123456",
+        "descricao": "Cerveja Acme",
+        "estoque": 10,
+        "preco": 10.0
+    },
+    {
+        "id": 2,
+        "codigo": "98765",
+        "descricao": "Refrigerante Acme",
+        "estoque": 50,
+        "preco": 6.0
+    },
+    {
+        "id": 3,
+        "codigo": "111111",
+        "descricao": "Sabão Acme",
+        "estoque": 20,
+        "preco": 3.00
+    }
+]

@@ -1,0 +1,41 @@
+EXERCÍCIOS - MVC
+
+1) Implemente o comportamento completo para adicionar um produto.
+   O comportamento deve:
+   - guardar o produto na venda;
+   - mostrar o produto adicionado na tabela;
+   - atualizar o número de itens no rodapé da tabela;
+   - atualizar o total da venda no rodapé da tabela.
+   OBS.: Não é preciso salvar a venda ou o produto no servidor.
+         Isso será implementado posteriormente, ao salvar a venda.
+
+2) a) Adicione um campo Quantidade à tela, antes do campo Produto.
+   Quando o botão "Adicionar" for disparado e obtiver sucesso, limpe o código
+   do produto, defina a quantidade para 1 e coloque o foco novamente no código.
+
+   b) Faça com que a quantidade do item, informada no campo, seja considerada ao adicioná-lo.
+
+3) Implemente o comportamento para remover um item da tela, pelo botão "Remover",
+   ao lado direito de "Adicionar". Faça com que ele remova um item existente, na
+   quantidade informada. Se o item não existir na Venda, a mensagem "Item não consta na venda"
+   deve ser exibida.
+
+4) a) Crie uma classe CacheDeItens que contenha métodos para salvar e recuperar itens
+   da venda do cache, além de limpar todos os itens do cache.
+   Implemente a classe de forma a salvar os itens em localStorage.
+
+   b) Faça com que Venda salve os itens no cache quando esses forem adicionados ou
+      removidos dela.
+
+   c) Faça com que a Venda, ao ser criada, carregue os itens do cache, utilizando
+      a classe CacheDeItens. Deve ser possível criar a venda optando por não
+      carregar os itens do cache. Nesse caso, o cache deve ser limpo.
+
+5) a) Crie uma classe RepositorioVenda que permita salvar uma venda. Ao salvá-la, ela
+   deve ser adicionada em um servidor com API RESTful no formato JSON. Crie esse
+   servidor utilizando a ferramenta JsonServer. A venda deve ser salva com uma data
+   e todos os seus itens.
+
+   b) Adicione um botão salvar que salve a venda e, em caso de sucesso, mostre
+      uma mensagem ao usuário e limpe os dados da tela.
+      Uma nova venda deve ser criada, com cache limpo.
