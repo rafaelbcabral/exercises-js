@@ -45,7 +45,7 @@ function pegarjogador(jogador){
       if(response.status >= 400){
         throw new Error('Nao foi possivel pegar o jogador!');
       }
-      return response.json();
+      return ;
     })
     .catch(function(erro){
       alert(erro.message);
@@ -58,7 +58,7 @@ function pegarTodosJogadores(){
       if(response.status >= 400){
         throw new Error('Nao foi possivel pegar o jogador!');
       }
-      return response.json();
+      return ;
     })
     .catch(function(erro){
       alert(erro.message);

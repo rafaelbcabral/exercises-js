@@ -8,16 +8,135 @@
     },
     {
         "id": 2,
-        "codigo": "98765",
+        "codigo": "123457",
         "descricao": "Refrigerante Acme",
         "estoque": 50,
         "preco": 6.0
     },
     {
         "id": 3,
-        "codigo": "111111",
+        "codigo": "123458",
         "descricao": "Sabão Acme",
         "estoque": 20,
         "preco": 3.00
+    },
+    {
+        "id": 4,
+        "codigo": "123459",
+        "descricao": "Chocolate Acme",
+        "estoque": 30,
+        "preco": 5.0
+    },
+    {
+        "id": 5,
+        "codigo": "123460",
+        "descricao": "Bolacha Acme",
+        "estoque": 25,
+        "preco": 4.5
+    },
+    {
+        "id": 6,
+        "codigo": "123461",
+        "descricao": "Suco Acme",
+        "estoque": 40,
+        "preco": 8.0
+    },
+    {
+        "id": 7,
+        "codigo": "123462",
+        "descricao": "Água Acme",
+        "estoque": 100,
+        "preco": 2.5
+    },
+    {
+        "id": 8,
+        "codigo": "123463",
+        "descricao": "Energetico Acme",
+        "estoque": 15,
+        "preco": 12.0
+    },
+    {
+        "id": 9,
+        "codigo": "123464",
+        "descricao": "Chá Acme",
+        "estoque": 60,
+        "preco": 3.5
+    },
+    {
+        "id": 10,
+        "codigo": "123465",
+        "descricao": "Café Acme",
+        "estoque": 70,
+        "preco": 7.0
+    },
+    {
+        "id": 11,
+        "codigo": "123466",
+        "descricao": "Leite Acme",
+        "estoque": 50,
+        "preco": 4.0
+    },
+    {
+        "id": 12,
+        "codigo": "123467",
+        "descricao": "Queijo Acme",
+        "estoque": 40,
+        "preco": 10.0
+    },
+    {
+        "id": 13,
+        "codigo": "123468",
+        "descricao": "Presunto Acme",
+        "estoque": 30,
+        "preco": 8.0
+    },
+    {
+        "id": 14,
+        "codigo": "123469",
+        "descricao": "Pão Acme",
+        "estoque": 90,
+        "preco": 3.0
+    },
+    {
+        "id": 15,
+        "codigo": "123470",
+        "descricao": "Biscoito Acme",
+        "estoque": 70,
+        "preco": 2.5
+    },
+    {
+        "id": 16,
+        "codigo": "123471",
+        "descricao": "Salgadinho Acme",
+        "estoque": 100,
+        "preco": 4.0
+    },
+    {
+        "id": 17,
+        "codigo": "123472",
+        "descricao": "Pizza Acme",
+        "estoque": 20,
+        "preco": 15.0
+    },
+    {
+        "id": 18,
+        "codigo": "123473",
+        "descricao": "Hamburguer Acme",
+        "estoque": 25,
+        "preco": 8.0
+    },
+    {
+        "id": 19,
+        "codigo": "123474",
+        "descricao": "Frango Acme",
+        "estoque": 35,
+        "preco": 12.0
+    },
+    {
+        "id": 20,
+        "codigo": "123475",
+        "descricao": "Peixe Acme",
+        "estoque": 20,
+        "preco": 18.0
     }
 ]
